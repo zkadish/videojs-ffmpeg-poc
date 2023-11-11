@@ -1,0 +1,8 @@
+/* .video-js .vjs-control-bar div:nth-of-type(2) { display: block !important;}
+.video-js .vjs-control-bar div:nth-of-type(4) { display: block !important;} */
+.video-js .vjs-current-time { display: block !important; }
+.video-js .vjs-duration { display: block !important; }
+.video-js .vjs-audio-button { display: block !important; }
+.video-js .vjs-control-bar .frame-icon { cursor: pointer; width: 5.5em; }
+.video-js .vjs-control-bar .back-icon::before { content: "-1 frame"; }
+.video-js .vjs-control-bar .forward-icon::before { content: "+1 frame"; }
