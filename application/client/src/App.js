@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import Video from './Video';
+import VideoPlayer from './VideoPlayer';
 import logo from './logo.svg';
 import axios from 'axios';
 
@@ -23,7 +23,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
       </header>
       <section className="App-section">
-        <Video />
+        <VideoPlayer />
       </section>
       <footer className="App-footer">
         <p>

@@ -3,9 +3,9 @@ import videojs from 'video.js';
 import { Box } from '@mui/material';
 
 import '../../../node_modules/video.js/dist/video-js.css';
-import './VideoJsPlayer.css';
+import './VideoJs.css';
 
-const VideoJsPlayer = (props) => {
+const VideoJs = (props) => {
   const {options, onReady} = props;
 
   const videoRef = useRef(null);
@@ -82,7 +82,7 @@ const VideoJsPlayer = (props) => {
 
     player.autoplay(options.autoplay);
     player.src(options.sources);
-  }, [options, videoRef]);
+  }, [options, videoRef, onReady]);
 
   // Dispose the Video.js player when the functional component unmounts
   React.useEffect(() => {
@@ -103,4 +103,4 @@ const VideoJsPlayer = (props) => {
   );
 }
 
-export default VideoJsPlayer;
+export default VideoJs;

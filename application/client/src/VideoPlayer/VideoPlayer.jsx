@@ -6,11 +6,11 @@ import {
 } from '@mui/material';
 // import AppLayout from '../Layout/AppLayout';
 // import Authn from '../../components/Authn';
-import VideoJsPlayer from './VideoJsPlayer'
+import VideoJs from './VideoJs'
 
-import classes from './Video.styles';
+import classes from './VideoPlayer.styles';
 
-function Video() {
+function VideoPlayer() {
   const playerRef = useRef(null);
 
   const videoJsOptions = {
@@ -91,8 +91,8 @@ function Video() {
     // You can handle player events here, for example:
     player.on('loadedmetadata', () => {
       console.log('videojs player has loaded video metadata');
-      const audio = player.audioTracks();
-      debugger;
+      // const audio = player.audioTracks();
+      // debugger;
       // look for audio and text tracks when this event executes
     });
 
@@ -123,11 +123,11 @@ function Video() {
       </Box>
       <Box sx={{ ...classes.videoPlayer }}>
         <Box className="player-size">
-          <VideoJsPlayer options={videoJsOptions} onReady={handlePlayerReady} />
+          <VideoJs options={videoJsOptions} onReady={handlePlayerReady} />
         </Box>
       </Box>
     </Paper>
   );
 }
 
-export default Video;
+export default VideoPlayer;
