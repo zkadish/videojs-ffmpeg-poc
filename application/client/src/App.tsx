@@ -8,14 +8,24 @@ import './App.css';
 function App() {
 
   useEffect(() => {
-    axios.get('/health').then((data) => {
+    axios.get('/health-check').then((data) => {
       console.log(data);
-      debugger;
+      // debugger;
     }).catch((err) => {
       console.log(err);
       debugger;
-    })
+    });
   }, [])
+
+  // useEffect(() => {
+  //   axios.get('/video-proxy').then((data) => {
+  //     console.log(data);
+  //     debugger;
+  //   }).catch((err) => {
+  //     console.log(err);
+  //     debugger;
+  //   });
+  // }, [])
 
   return (
     <div className="App">

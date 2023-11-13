@@ -61,7 +61,8 @@ function VideoPlayer() {
       // src: 'http://sample.vodobox.net/skate_phantom_flex_4k/skate_phantom_flex_4k.m3u8',
       // src: 'http://d1v1s2of9ivmbp.cloudfront.net/Multi_Audio/hls_v3_10m/Pukar/index.m3u8',
       // src: 'https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8', // * plays over http and has audio tracks
-      src: 'http://d2zihajmogu5jn.cloudfront.net/bipbop-advanced/bipbop_16x9_variant.m3u8', // * plays over http and has audio tracks
+      // src: 'http://d2zihajmogu5jn.cloudfront.net/bipbop-advanced/bipbop_16x9_variant.m3u8', // * plays over http and has audio tracks
+      src: '/video-proxy/bipbop_16x9_variant.m3u8', // * plays over http and has audio tracks
       type: 'application/x-mpegURL',
       // src: 'https://livesim.dashif.org/livesim/chunkdur_1/ato_7/testpic4_8s/Manifest.mpd',
       // src: 'https://dash.akamaized.net/dash264/TestCasesUHD/2b/11/MultiRate.mpd',
