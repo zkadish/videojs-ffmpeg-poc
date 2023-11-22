@@ -9,7 +9,10 @@ node_modules
 /coverage
 
 # production
-/build
+build
+
+# file types
+*.mp4
 
 # misc
 .DS_Store

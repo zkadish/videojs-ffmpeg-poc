@@ -7,6 +7,7 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var healthCheckRouter = require('./routes/healthCheck');
 var videoProxyRouter = require('./routes/videoProxy');
+var pipedImageRouter = require('./routes/pipedImage');
 
 var app = express();
 
@@ -21,8 +22,9 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
-app.use('/health-check', healthCheckRouter);
+app.use('/', healthCheckRouter);
 app.use('/video-proxy', videoProxyRouter);
+app.use('/piped-image', pipedImageRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

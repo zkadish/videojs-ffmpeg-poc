@@ -1,12 +1,36 @@
 import { useEffect } from 'react';
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
 import VideoPlayer from './VideoPlayer';
-import logo from './logo.svg';
+import ImagePiped from './ImagePiped';
+import FfmpegWasm from './FfmpegWasm';
 import axios from 'axios';
+import logo from './logo.svg';
 
 import './App.css';
 
-function App() {
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <div>Hello world!</div>,
+  },
+  {
+    path: "/video",
+    element: <VideoPlayer />,
+  },
+  {
+    path: "/image",
+    element: <ImagePiped />,
+  },
+  {
+    path: "/wasm",
+    element: <FfmpegWasm />,
+  },
+]);
 
+function App() {
   useEffect(() => {
     axios.get('/health-check').then((data) => {
       console.log(data);
@@ -33,7 +57,8 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
       </header>
       <section className="App-section">
-        <VideoPlayer />
+        {/* <VideoPlayer /> */}
+        <RouterProvider router={router} />
       </section>
       <footer className="App-footer">
         <p>

@@ -62,8 +62,8 @@ function VideoPlayer() {
       // src: 'http://d1v1s2of9ivmbp.cloudfront.net/Multi_Audio/hls_v3_10m/Pukar/index.m3u8',
       // src: 'https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8', // * plays over http and has audio tracks
       // src: 'http://d2zihajmogu5jn.cloudfront.net/bipbop-advanced/bipbop_16x9_variant.m3u8', // * plays over http and has audio tracks
-      src: '/video-proxy/bipbop_16x9_variant.m3u8', // * plays over http and has audio tracks
-      type: 'application/x-mpegURL',
+      // src: '/video-proxy/bipbop_16x9_variant.m3u8', // * plays over http and has audio tracks
+      // type: 'application/x-mpegURL',
       // src: 'https://livesim.dashif.org/livesim/chunkdur_1/ato_7/testpic4_8s/Manifest.mpd',
       // src: 'https://dash.akamaized.net/dash264/TestCasesUHD/2b/11/MultiRate.mpd',
       // src: 'https://dash.akamaized.net/dash264/TestCasesIOP33/adapatationSetSwitching/5/manifest.mpd',
@@ -72,7 +72,8 @@ function VideoPlayer() {
       // src: 'http://ftp.itec.aau.at/datasets/DASHDataset2014/BigBuckBunny/1sec/BigBuckBunny_1s_onDemand_2014_05_09.mpd',
       // src: 'https://media.axprod.net/TestVectors/v7-Clear/Manifest_1080p.mpd',
       // type: 'application/dash+xml',
-      // type: 'video/mp4',
+      src: '/video-proxy/bipbop_16x9_variant.m3u8',
+      type: 'video/mp4',
     }]
   };
 
